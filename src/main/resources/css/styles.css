@@ -1,0 +1,15 @@
+/* Main Application Stylesheet */
+
+.root {
+    -fx-font-family: "Segoe UI", Arial;
+    -fx-base: #ffffff;
+}
+
+.button {
+    -fx-padding: 8px 16px;
+    -fx-font-size: 12px;
+}
+
+.label {
+    -fx-font-size: 12px;
+}
