@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Button?>
+<?import javafx.geometry.Insets?>
+
+<BorderPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="com.fintrack.controller.JokeController">
+    <center>
+        <VBox spacing="20" style="-fx-alignment: center; -fx-padding: 40;">
+            <Label text="🎉 Random Joke Generator 🎉" 
+                   style="-fx-font-size: 24; -fx-font-weight: bold;"/>
+            
+            <Label fx:id="jokeLabel" 
+                   text="Click a button to get a joke!" 
+                   style="-fx-font-size: 16; -fx-text-alignment: center; -fx-wrap-text: true;"
+                   wrapText="true"/>
+            
+            <VBox spacing="10" style="-fx-alignment: center;">
+                <Button fx:id="getJokeButton" 
+                        text="Get Random Joke" 
+                        onAction="#onGetRandomJoke"
+                        style="-fx-padding: 10; -fx-font-size: 14; -fx-min-width: 200;"/>
+                
+                <Button fx:id="getProgrammingJokeButton" 
+                        text="Get Programming Joke" 
+                        onAction="#onGetProgrammingJoke"
+                        style="-fx-padding: 10; -fx-font-size: 14; -fx-min-width: 200;"/>
+            </VBox>
+        </VBox>
+    </center>
+</BorderPane>
